@@ -1,0 +1,18 @@
+default:
+    push_kubernetes: false
+    push_images: false
+kubernetes:
+    version: ""
+plugin:
+    callback: 127.0.0.1:8090
+registry:
+    repository: test.io
+    namespace: test
+    username: test
+    password: test
+images:
+    - name: nginx
+      id: 12345678 
+      path: docker.io/nginx
+      tags:
+        - 1.19.1 
